@@ -1,4 +1,4 @@
-scalaVersion := "3.3.4"
+scalaVersion := "3.7.2"
 
 Test / fork := true
 
@@ -9,6 +9,6 @@ enablePlugins(SbtPlugin)
 pluginCrossBuild / sbtVersion := {
   scalaBinaryVersion.value match {
     case "2.12" => sbtVersion.value
-    case _ => "2.0.0-M2"
+    case _ => "2.0.0-RC2"
   }
 }
